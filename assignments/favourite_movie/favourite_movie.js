@@ -7,11 +7,8 @@ function favouriteMovie(operation, movie) {
     return movies;
 }
     else if(operation==="remove"){
-    
-        movies.pop();
-        return movies
-    
-    }
+    movies.push();
+    return movies}
 }
 
 module.exports = favouriteMovie;
