@@ -12,7 +12,7 @@ var ul = document.getElementById("ul")
 const fetchPromise = fetch("https://jsonplaceholder.typicode.com/todos")
 fetchPromise.then((response) => { return response.json() })
     .then((data) => {
-        var count = 0
+
         sucessfulFun(data);
 
     }).catch((error) => console.log("no data found"))
@@ -39,8 +39,6 @@ function sucessfulFun(data) {
     }
     let count = 0
     function render(data) {
-        console.log(data)
-        console.log("========================= ")
         var p = document.createElement("li")
         var pempty = document.createElement("p")
         p.setAttribute("key", ++count)
